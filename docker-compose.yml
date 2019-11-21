@@ -1,0 +1,14 @@
+# 暂未启用
+version: "3"
+
+networks:
+  frontend:
+    driver: "bridge"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./:"
